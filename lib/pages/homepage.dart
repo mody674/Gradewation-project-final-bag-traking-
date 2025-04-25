@@ -426,7 +426,7 @@ class _HomePageState extends State<Homepage> {
                         radius: 20,
                         backgroundColor: Colors.grey[300],
                         backgroundImage: const AssetImage(
-                          'assets/images/download.png',
+                          'assets/imgs/download.png',
                         ),
                       ),
                     ),

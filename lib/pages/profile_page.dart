@@ -5,6 +5,7 @@ import 'privacy_policy_screen.dart';
 import 'package:flutter/material.dart';
 import 'welback.dart';
 import 'creat.dart';
+import 'support_page.dart'; // تمت إضافة استيراد صفحة الدعم
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -217,7 +218,6 @@ class ProfilePage extends StatelessWidget {
                     },
                   ),
                 ),
-                // Spacer
                 const SizedBox(height: 8),
                 buildCard(
                   color: cardColor,
@@ -229,7 +229,14 @@ class ProfilePage extends StatelessWidget {
                       size: 16,
                       color: Colors.red,
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SupportPage(),
+                        ),
+                      );
+                    },
                   ),
                 ),
                 buildCard(
